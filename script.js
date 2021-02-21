@@ -1,3 +1,5 @@
+console.log("version 1.0.3");
+
 var twitterHandleInput = document.getElementById("twitterhandle")
 var analyzeButton = document.getElementById("analyzebutton")
 var returnText = document.getElementById("returntext")
