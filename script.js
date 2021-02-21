@@ -1,8 +1,7 @@
-console.log("version 1.0.4");
-
 var twitterHandleInput = document.getElementById("twitterhandle")
 var analyzeButton = document.getElementById("analyzebutton")
 var returnText = document.getElementById("returntext")
+var twitterLink = document.getElementById("twitterlink")
 var polarityText = document.getElementById("polaritytext")
 var polarityNote = document.getElementById("polaritynote")
 var subjectivityText = document.getElementById("subjectivitytext")
@@ -66,6 +65,8 @@ xhttp.onreadystatechange = function() {
             } else {
                 subjectivityRating = "Overwhelmingly biased";
             }
+            twitterLink.innerHTML = "@" + lastEnteredText;
+            twitterLink.href = "https://www.twitter.com/" + lastEnteredText;
             polarityText.innerHTML = "Polarity: " + polarity.toFixed(3) + " - " + polarityRating;
             polarityNote.innerHTML = "Ranges from -1 (very negative) to +1 (very positive)";
             subjectivityText.innerHTML = "Subjectivity: " + subjectivity.toFixed(3) + " - " + subjectivityRating;
