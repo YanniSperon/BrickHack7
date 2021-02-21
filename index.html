@@ -3,12 +3,30 @@
     <header>
         <meta charset="UTF-8">
         <title>Tweet Analyzer</title>
+        <style>
+            h1 { text-align:center; }
+            h2 { text-align:center; }
+            div { position:relative; margin-left: -120px; left:50%; display: inline-block;}
+            input { text-align: center;}
+            p { text-align:center; font-size:larger;}
+            .atsign {display:inline;}
+            .note { opacity:0.65; font-size:smaller;}
+        </style>
     </header>
     <body>
-        <h1>Tweet Analyzer</h1>
-        <input type="text" id="twitterhandle" name="twitterhandle">
-        <button type="button" id="analyzebutton" name="analyzebutton">Analyze!</button>
-        <p id="returntext" name="returntext"></p>
+        <h1>Twitter</h1>
+        <hr/>
+        <h2>User tweet analysis</h2>
+        <div>
+            <p class="atsign">@</p>
+            <input type="text" id="twitterhandle" name="twitterhandle" placeholder="Twitter Handle">
+            <button type="button" id="analyzebutton" name="analyzebutton">Analyze!</button>
+        </div>
+        <p id="returntext" name="returntext">Please enter a Twitter handle</p>
+        <p id="polaritytext" name="polaritytext">text</p>
+        <p id="polaritynote" name="polaritynote" class="note">text</p>
+        <p id="subjectivitytext" name="subjectivitytext">text</p>
+        <p id="subjectivitynote" name="subjectivitynote" class="note">text</p>
         <script src="script.js"></script>
     </body>
 </html>
