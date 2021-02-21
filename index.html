@@ -6,23 +6,28 @@
         <style>
             h1 { text-align:center; }
             h2 { text-align:center; }
-            div { position:relative; margin-left: -120px; left:50%; display: inline-block;}
+            .handleentry { position:relative; margin-left: -120px; left:50%; display: inline-block;}
             input { text-align: center;}
             p { text-align:center; font-size:larger;}
             .atsign {display:inline;}
             .note { opacity:0.65; font-size:smaller;}
+            .twitterlink { text-align:center; font-size:larger; }
+            .linksizer {text-align:center;}
         </style>
     </header>
     <body>
         <h1>Twitter</h1>
         <hr/>
         <h2>User tweet analysis</h2>
-        <div>
+        <div class="handleentry">
             <p class="atsign">@</p>
             <input type="text" id="twitterhandle" name="twitterhandle" placeholder="Twitter Handle">
             <button type="button" id="analyzebutton" name="analyzebutton">Analyze!</button>
         </div>
         <p id="returntext" name="returntext">Please enter a Twitter handle</p>
+        <div class="linksizer">
+            <a id="twitterlink" name="twitterlink" class="twitterlink"></a>
+        </div>
         <p id="polaritytext" name="polaritytext"></p>
         <p id="polaritynote" name="polaritynote" class="note"></p>
         <p id="subjectivitytext" name="subjectivitytext"></p>
