@@ -1,4 +1,4 @@
-console.log("version 1.0.0")
+console.log("version 1.0.1")
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
