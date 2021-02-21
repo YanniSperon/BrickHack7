@@ -24,7 +24,7 @@ document.getElementById("analyzebutton")
     var twitterhandle = document.getElementById("twitterhandle").value;
     console.log(twitterhandle);
     
-    xhttp.open("GET", "http://127.0.0.1:5000/" + twitterhandle, true);
+    xhttp.open("GET", "http://69.47.252.7:443/" + twitterhandle, true);
     xhttp.send();
 
     document.getElementById("twitterhandle").value = "";
